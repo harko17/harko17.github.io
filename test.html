@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="test.js"></script> -->
+    <title>IQ test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>SPORTS MANIAC </h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Take test</a>
+        <a href="form4.html">Login/SignUp/Profile</a>
+    </nav>
+    <main><div class="bg">
+    <form >
+        <h2>QUIZ</h2>
+        <ol>
+            <li class="left">The famous football player Maradona belongs to which among the following countries?<br>
+            <input type="radio" id="opt1" name="q1"  value="BRAZIL"><label for="opt1">BRAZIL</label>
+            <input type="radio" id="opt2" name="q1"  value="ARGENTINA"><label for="opt2">ARGENTINA</label>
+            <input type="radio" id="opt3" name="q1"  value="JAPAN"><label for="opt3">JAPAN</label>
+            <input type="radio" id="opt4" name="q1"  value="ITALY"><label for="opt4">ITALY</label>
+            </li><br>
+            <LI class="right">Since which of the following year Winter Olympics are held ?<br>
+            <input type="radio" id="opt5" name="q2"  value="1924"><label for="opt5">1924</label>
+            <input type="radio" id="opt6" name="q2"  value="1900"><label for="opt6">1900</label>
+            <input type="radio" id="opt7" name="q2"  value="1888"><label for="opt7">1888</label>
+            <input type="radio" id="opt8" name="q2"  value="1896"><label for="opt8">1896</label>
+            
+            </LI><br>
+            <li class="left">How many number of Red Balls are in Snooker? <br>
+            <input type="radio" id="opt9" name="q3"  value="17"><label for="opt9">17</label>
+            <input type="radio" id="opt10" name="q3"   value="13"><label for="opt10">13</label>
+            <input type="radio" id="opt11" name="q3"  value="15"><label for="opt11">15</label>
+            <input type="radio" id="opt12" name="q3"  value="9"><label for="opt12">9</label>
+            
+            </li><br>
+            
+            <li class="right">With which sport is Seema Punia associated?<br>
+            <input type="radio" id="opt13" name="q4"  value="DISCUS THROW"><label for="opt13">DISCUS THROW</label>
+            <input type="radio" id="opt14" name="q4"  value="JAVELIN THROW"><label for="opt14">JAVELIN THROW</label>
+            <input type="radio" id="opt15" name="q4"  value="LONG JUMP"><label for="opt15">LONG JUMP</label>
+            <input type="radio" id="opt16" name="q4"  value="SHOT PUT"><label for="opt16">SHOT PUT</label>
+            
+            </li><br>
+            <li class="left">Who is the Chairperson of the IOC Women in Sport Commission?<br>
+            <input type="radio" id="opt17" name="q5"  value="POLYTHENEBAG"><label for="opt17">LYDIA ALIA</label>
+            <input type="radio" id="opt18" name="q5"  value="LYDIA DUNPHY"><label for="opt18">LYDIA DUNPHY</label>
+            <input type="radio" id="opt19" name="q5"  value="LYDIA MENDOZA"><label for="opt19">LYDIA MENDOZA</label>
+            <input type="radio" id="opt20" name="q5"  value="LYDIA NSEKERA"><label for="opt20">LYDIA NSEKERA</label>
+            
+            </li><br>
+        </ol>
+        <button type="button" onclick="displayRadioValue()" >Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+        <h2 id="output1"></h2>
+        <h2 id="output2"></h2>
+        <h2 id="output3"></h2>
+        <h2 id="output4"></h2>
+        <h2 id="output5"></h2>
+        <h2 id="output"></h2>
+        
+    </form>
+    <script>
+        function displayRadioValue() {
+            let ans=["ARGENTINA" ,"1924","15","DISCUS THROW","LYDIA NSEKERA"];
+            var z=0;
+            for(j=1;j<=5;j++){
+            var p="q"+j;
+            var ele = document.getElementsByName(p);
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                {
+                    if((ele[i].value)===(ans[j-1]))
+                    z++;
+                
+                document.getElementById("output"+j).innerHTML
+                        = "Q"+j+": Your choice="+ele[i].value +" | Correct Answer= "+ ans[j-1];
+                }
+            }
+        }
+        document.getElementById("output").innerHTML="YOUR SCORE IS "+z+"/5";
+    }
+    </script>
+    </div></main>
+</body>
+</html>

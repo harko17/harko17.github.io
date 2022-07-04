@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px red;
+    color: red;
+}
+
+header {
+    padding: 40px;
+    background-color: black;
+    background-image: url("https://i.ibb.co/sWqrzFq/sports-tools-53876-138077.jpg");
+}
+
+nav {
+    background-color: rgba(40, 117, 5, 0.918);
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+main {
+    color:azure;
+    font-weight: bolder;
+    text-align: center;
+}
+.bg{
+    background-image: url("brain.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    padding: 20px;
+}
+
+section {
+    min-height: 75vh;
+}
+p.left{
+    text-align: left;
+    padding:20px;
+    margin-right: 25%;
+    border:25px solid greenyellow;
+    background-color: none;
+
+    
+}
+p.right{
+    text-align: right;
+    padding: 20px;
+    margin-left:25%;
+    border:25px solid rgb(247, 70, 39);
+    background-color: none;
+}
+iframe {
+    height: 75vh;
+    position: var(40px);
+    padding: 10px;
+    margin:10%;
+    border:25px solid rgba(247, 39, 178, 0.911);
+}
+button{
+    background-color: rgb(243, 220, 17); 
+    border: none;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 20px;
+    float: right;
+    text-decoration: none;
+    display:flex;
+}
+
